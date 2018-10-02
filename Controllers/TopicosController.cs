@@ -9,7 +9,6 @@ namespace Fiap01.Controllers
     public class TopicosController : Controller
     {
         public IActionResult Index(string categoria, string topico)
-
         {
             return View();
         }

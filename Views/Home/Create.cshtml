@@ -1,0 +1,23 @@
+﻿@model Pergunta
+@{
+    Layout = "_LayoutB";
+}
+<form action="/home/create" method="post">
+    @Html.EditorFor(a => a.Descricao)
+    @Html.ValidationMessageFor(a => a.Descricao)
+
+    @*<input type="text" required name="Descricao" value="" />
+        <br />
+        <input type="text" name="Autor" value="" />
+        <br />*@
+    <input type="submit" value="Salvar" />
+    <br />
+    <br />
+    <br />
+    @Html.ValidationSummary()
+
+</form>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js" ></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js" ></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.9/jquery.validate.unobtrusive.min.js" ></script>
